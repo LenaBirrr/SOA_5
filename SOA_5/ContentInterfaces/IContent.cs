@@ -10,9 +10,7 @@ namespace SOA_5
     {
         public string Topic { get; set; }
         public string Funder { get; set; }
-        public string Text { get; set; }
-        public byte[] Video { get; set; }
-        public byte[] Photos { get; set; }
+        
 
     }
 }

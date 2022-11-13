@@ -6,18 +6,14 @@ using System.Threading.Tasks;
 
 namespace SOA_5
 {
-    public class MakeVKContent:IMakeContent
+    public class MakeVKContent:IMakeVKContent
     {
         public string FindAFunder()
         {
             return "funder";
         }
 
-        public byte[] MakeVideo()
-        {
-            throw new NotImplementedException();
-
-        }
+        
 
         public IContent Post()
         {

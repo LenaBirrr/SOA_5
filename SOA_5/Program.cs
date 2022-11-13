@@ -6,6 +6,6 @@ contentMakers.Add(new MakeInstContent());
 contentMakers.Add(new MakePinterestContent());
 contentMakers.Add(new MakeYoutubeContent());
 foreach (var maker in contentMakers)
-    maker.WriteText();
+    maker.Post();
 
 Console.WriteLine("Hello, World!");

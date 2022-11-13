@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SOA_5.ContentInterfaces;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace SOA_5
 {
-    public class InstContent : IContent
+    public class InstContent : IInstContent
     {
         public string Text { get; set; }
         public byte[] Video { get; set; }

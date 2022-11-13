@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SOA_5
 {
-    public class MakeInstContent:IMakeContent
+    public class MakeInstContent:IMakeInstContent
     {
         public string FindAFunder()
         {

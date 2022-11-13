@@ -6,18 +6,14 @@ using System.Threading.Tasks;
 
 namespace SOA_5
 {
-    public class MakePinterestContent:IMakeContent
+    public class MakePinterestContent:IMakePinterestContent
     {
         public string FindAFunder()
         {
             return "funder";
         }
 
-        public byte[] MakeVideo()
-        {
-            throw new NotImplementedException();
-        }
-
+       
         public IContent Post()
         {
             return new PinterestContent(TakePhotos(), ThinkOfATopic(), FindAFunder());
@@ -34,9 +30,5 @@ namespace SOA_5
             return "";
         }
 
-        public string WriteText()
-        {
-            throw new NotImplementedException();
-        }
     }
 }

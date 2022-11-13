@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SOA_5.ContentInterfaces;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,11 +7,9 @@ using System.Threading.Tasks;
 
 namespace SOA_5
 {
-    public class YoutubeContent : IContent
+    public class YoutubeContent : IYoutibeContent
     {
-        public string Text { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
         public byte[] Video { get; set; }
-        public byte[] Photos { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
         public string Topic { get; set; }
         public string Funder { get; set; }
 

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SOA_5
 {
-    public class MakeYoutubeContent:IMakeContent
+    public class MakeYoutubeContent:IMakeYoutubeContent
     {
         public string FindAFunder()
         {
@@ -24,20 +24,13 @@ namespace SOA_5
             return new YoutubeContent(MakeVideo(), ThinkOfATopic(), FindAFunder());
         }
 
-        public byte[] TakePhotos()
-        {
-            throw new NotImplementedException();
-
-        }
+       
 
         public string ThinkOfATopic()
         {
             return "";
         }
 
-        public string WriteText()
-        {
-            throw new NotImplementedException();
-        }
+     
     }
 }
